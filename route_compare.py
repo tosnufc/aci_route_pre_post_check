@@ -4,6 +4,18 @@ Cisco ACI Routes Comparison Tool
 
 This script compares pre-change and post-change Cisco ACI route files,
 using destination subnets from the pre-change file as the base for comparison.
+Work best with the following artifacts collector commands:
+Leaf-xx-xx# show vrf all
+show lldp neighbor
+show ip route vrf all
+show vpc extended
+show port-channel summary
+show interface
+show interface status
+show interface brief
+show system internal epm vpc
+show system internal epm endpoint all
+show system internal epm endpoint all summary
 """
 
 import re
